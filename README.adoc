@@ -21,6 +21,17 @@ function listof() {
 </script>
 ++++
 
+
+++++
+<p>
+Content in a passthrough block is passed to the output unprocessed.
+That means you can include raw HTML, like this embedded Gist:
+</p>
+
+<script src="http://gist.github.com/mojavelinux/5333524.js">
+</script>
+++++
+
 = Chapter 02
 
 Lorem Ipsum, [underline]#dizgi# ve [line-through]#baskı# endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden *elektronik* dizgiye de sıçramıştır.  Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden *elektronik* dizgiye de sıçramıştır.  Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden *elektronik* dizgiye de sıçramıştır.
