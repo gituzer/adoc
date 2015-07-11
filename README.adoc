@@ -1,0 +1,26 @@
+== Chapter 01
+
+Lorem Ipsum, [underline]#dizgi# ve [line-through]#baskı# endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden *elektronik* dizgiye de sıçramıştır.
+
+++++
+<script>
+var req = new XMLHttpRequest();
+var timeout = setTimeout(function () {
+    req.abort();
+}, 60000);
+req.open("GET", "https://api.github.com/repos/asciidocfx/AsciidocFX/releases/latest", true);
+req.setRequestHeader("Content-Type", "application/json");
+req.onload = listof;
+req.send();
+function listof() {
+    if (req.readyState == 4 && req.status == 200) {
+        var data = $.parseJSON(req.responseText);
+        console.log(data.assets);
+    }
+}
+</script>
+++++
+
+= Chapter 02
+
+Lorem Ipsum, [underline]#dizgi# ve [line-through]#baskı# endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden *elektronik* dizgiye de sıçramıştır.  Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden *elektronik* dizgiye de sıçramıştır.  Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden *elektronik* dizgiye de sıçramıştır.
